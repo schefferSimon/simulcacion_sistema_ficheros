@@ -1,9 +1,11 @@
-from claseArchivo import *
+from clases.claseArchivo import *
 class Carpeta:
     def __init__(self, nombre):
         self.__nombre = nombre
         self.__listaArchivos = []
 
+    def getNombre(self):
+        return self.__nombre
 
     def agregarArchivo(self,nombre, contenido):
 
@@ -18,15 +20,15 @@ class Carpeta:
     def mostrarArchivos(self):
         for i in self.__listaArchivos:
             print(i.mostrarInfo())
-         
-            
+        
+"""
 carpetauno = Carpeta("prueba")
 
 carpetauno.agregarArchivo("archivo", "hola mundo")
 #carpetauno.eliminarArchivo("archivo")
 
 carpetauno.mostrarArchivos()
-
+"""
 
 
 
